@@ -418,6 +418,10 @@ namespace UnrealCLRFramework {
 			#define UNREALCLR_PIXEL_FORMAT 85
 		#endif
 
+		#if ENGINE_MINOR_VERSION == 3
+			#define UNREALCLR_PIXEL_FORMAT 92
+		#endif
+
 	#endif
 
 	static_assert(AudioFadeCurve::Count == AudioFadeCurve(4), "Invalid elements count of the [AudioFadeCurve] enumeration");
